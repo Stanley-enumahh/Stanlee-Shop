@@ -1,0 +1,41 @@
+.drop-down::before{
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: 10px;
+  height: 30px;
+  width: 30px;
+  border-left: rgb(196, 206, 239) solid 1px;
+  border-top: rgb(196, 206, 239) solid 1px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+.banner::before{
+  content: '';
+  position: absolute;
+  top: 110px;
+  right: -150px;
+  height: 450px;
+  width: 450px;
+  background-color: transparent;
+  border:  solid 7px rgb(151, 169, 227);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(15, 126, 177, 0.5);
+}
+@media screen and (max-width:768px){
+  .drop-down::before{
+    top: -10px;
+    left: 8px;
+    height: 20px;
+    width: 20px;
+  
+  }
+  .banner::before{
+    top: 160px;
+    right: -200px;
+    height: 350px;
+    width: 350px;
+    border:  solid 5px rgb(151, 169, 227);
+  }
+}
+
